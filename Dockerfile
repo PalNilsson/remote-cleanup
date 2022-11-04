@@ -12,9 +12,6 @@ COPY . .
 MAINTAINER Paul Nilsson
 USER root
 COPY execute.sh /usr/bin/execute.sh
-
-# The following env vars must be used to connect the pilot to the dask scheduler and use the proper NFS mount point
-ENV DASK_SHARED_FILESYSTEM_PATH /mnt/dask
 ENV WORKDIR 1234567890
 
 # Execute the clean-up script

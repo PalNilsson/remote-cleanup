@@ -14,4 +14,4 @@ The image is based on the BusyBox base image.
 
 ## Run instructions
 
-> docker run -e "WORKDIR=< PanDA job id >" remote-cleanup:latest
+> docker run -e "WORKDIR=< full remote path >" remote-cleanup:latest

@@ -17,7 +17,7 @@ function remove {
     fi
 }
 
-path=$DASK_SHARED_FILESYSTEM_PATH/$WORKDIR
+path=$WORKDIR
 echo "cleaning up $path"
 remove $path
 
