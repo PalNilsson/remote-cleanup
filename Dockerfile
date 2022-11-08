@@ -12,7 +12,7 @@ COPY . .
 MAINTAINER Paul Nilsson
 USER root
 COPY execute.sh /usr/bin/execute.sh
-ENV WORKDIR 1234567890
+ENV WORKDIR "TO_BE_SET_BY_USER"
 
 # Execute the clean-up script
 ENTRYPOINT ["sh", "/usr/bin/execute.sh"]

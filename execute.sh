@@ -12,12 +12,11 @@
 function remove {
   if [[ $1 == '/' || $1 == '/mnt' || $1 == '/mnt/' || $1 == '/mnt/dask' || $1 == '/mnt/dask/' ]]; then
     echo "cannot remove $1"
-    else
+  else
 	    rm -rf $1
-    fi
+  fi
 }
 
 path=$WORKDIR
 echo "cleaning up $path"
 remove $path
-
