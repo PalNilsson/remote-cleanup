@@ -14,6 +14,7 @@ function remove {
     echo "cannot remove $1"
   else
 	    rm -rf $1
+      echo $?
   fi
 }
 
